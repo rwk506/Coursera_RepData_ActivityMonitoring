@@ -155,8 +155,7 @@ paste ("Median of total number of steps per day = ",round((median(datemeans_new)
 ## [1] "Median of total number of steps per day =  37.383"
 ```
 
-Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?
-
+These values are very similar to those before imputing the data. The impact of the imputing technique used seems to push the mean and median values towards the mean value of all the steps. This does make sense, because we are using the mean at each interval to fill in the missing data.
 
 <br /><br />
 
