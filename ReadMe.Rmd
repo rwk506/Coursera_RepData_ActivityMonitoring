@@ -1,6 +1,23 @@
+# Coursera Data Science Specialization: Reproducible Data - Activity Monitoring
+
+[Introduction](#Intro)<br />
+[Summary of Problem](#Summary)<br />
+[Summary of Code](#Code)<br />
+[Additional Information](#Other)<br />
+
+<a name="Intro"/>
+## Introduction
 
 
-## Loading and preprocessing the data
+<a name="Summary"/>
+## Summary of Problem
+
+
+
+<a name="Code"/>
+## Summary of Code
+
+#### Loading and preprocessing the data
 
 First, the data is loaded with the read.csv(). The header (first ten lines) are examined to ensure that the data was loaded properly and looks as expected.
 
@@ -13,7 +30,7 @@ We will do any processing of the data in the following steps for specific tasks 
 <br /><br />
 
 
-## What is mean total number of steps taken per day?
+#### What is mean total number of steps taken per day?
 
 Now, we find the mean number of steps taken on each day and examine the distribution by using a histogram.
 
@@ -30,7 +47,7 @@ paste ("Median of total number of steps per day = ",round((median(datemeans,na.r
 <br /><br />
 
 
-## What is the average daily activity pattern?
+### What is the average daily activity pattern?
 
 By comparing the number of steps in the same time interval from day to day, we can get an idea of which times of the day, on average, the subject is more or less active.
 
@@ -48,7 +65,7 @@ intervals[intervalmeans==max(intervalmeans,na.rm=TRUE)]
 <br /><br />
 
 
-## Imputing missing values
+#### Imputing missing values
 
 First, we want to determine how many missing values exist in the dataset:
 ```{r,fig.width=5, fig.height=4,echo = TRUE}
@@ -90,7 +107,7 @@ These values are very similar to those before imputing the data. The impact of t
 
 
 
-## Are there differences in activity patterns between weekdays and weekends?
+#### Are there differences in activity patterns between weekdays and weekends?
 
 After using "strptime" to convert the "date" column into a readable date for R, we determine the day of the week of each date with the weekdays() function. Then we create a new column (newfile$dayofweek) in the new datatable with the imputed values (newfile) that is a factor variable flagging whether it is a "weekday" or "weekend".
 
@@ -115,4 +132,17 @@ plot(intervals,weekendmean, xlab="Mean number of steps per weekend-day", ylab="M
 It looks as though, on average, weekend days involve more steps through the middlemost intervals than weekdays do.
 
 <br /><br />
+
+
+## Additional Information
+
+Author: RWK
+
+License: None, free to use and edit as people wish (*if* they wish).
+
+Contact: May be made through GitHub
+
+<br /><br />
+
+
 
