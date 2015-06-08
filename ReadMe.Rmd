@@ -1,9 +1,3 @@
----
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
 
 # Coursera Data Science Specialization: Reproducible Data - Activity Monitoring
 
@@ -90,6 +84,9 @@ We can look at the mean and median of the overall distribution of steps per day:
 paste ("Mean of total number of steps per day = ",round((mean(datemeans,na.rm=TRUE)),3))
 paste ("Median of total number of steps per day = ",round((median(datemeans,na.rm=TRUE)),3))
 ```
+<br />
+The resulting plot can be viewed [here](https://github.com/rwk506/Coursera_RepData_ActivityMonitoring/blob/master/figure/Plot1%20-%20Histogram.png).
+
 <br /><br />
 
 
@@ -108,7 +105,12 @@ The peak of this time-series average is at the interval 835, which is the 5-minu
 ```{r}
 intervals[intervalmeans==max(intervalmeans,na.rm=TRUE)]
 ```
+<br />
+The resulting plot can be viewed [here](https://github.com/rwk506/Coursera_RepData_ActivityMonitoring/blob/master/figure/Plot2%20-%20Mean%20Steps.png).
+
 <br /><br />
+
+
 
 
 #### Imputing missing values
@@ -148,6 +150,8 @@ paste ("Median of total number of steps per day = ",round((median(datemeans_new)
 ```
 
 These values are very similar to those before imputing the data. The impact of the imputing technique used seems to push the mean and median values towards the mean value of all the steps. This does make sense, because we are using the mean at each interval to fill in the missing data.
+<br />
+The resulting plot can be viewed [here](https://github.com/rwk506/Coursera_RepData_ActivityMonitoring/blob/master/figure/Plot3%20-%20Histogram%202.png).
 
 <br /><br />
 
@@ -176,7 +180,8 @@ plot(intervals,weekendmean, xlab="Mean number of steps per weekend-day", ylab="M
 ```
 
 It looks as though, on average, weekend days involve more steps through the middlemost intervals than weekdays do.
-
+<br />
+The resulting plot can be viewed [here](https://github.com/rwk506/Coursera_RepData_ActivityMonitoring/blob/master/figure/Plot4%20-%20Mean%20Steps:%20Weekday%20vs.%20Weekend.png).
 <br /><br />
 
 
