@@ -1,21 +1,67 @@
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
+
 # Coursera Data Science Specialization: Reproducible Data - Activity Monitoring
 
 [Introduction](#Intro)<br />
-[Summary of Problem](#Summary)<br />
-[Summary of Code](#Code)<br />
+[Summary of Data](#Summary)<br />
+[Repository Contents](#RepoStuff)<br/>
+[Summary of Code and Analysis](#Code)<br />
+[Conclusions](#Conclusions)<br/>
 [Additional Information](#Other)<br />
+
+
 
 <a name="Intro"/>
 ## Introduction
 
+Technology has now made it possible to closely monitor an individual's health. Certain products such as [Fitbit](http://www.fitbit.com), [Nike
+Fuelband](http://www.nike.com/us/en_us/c/nikeplus-fuelband), and [Jawbone Up](https://jawbone.com/up) allow tracking of one's physical movement throughout the day. However, the raw data can be difficult to obtain and sometimes more difficult to understand, as there is a minimal amount of statistical analysis available as well as a lack of software for handling the data.
+
+In this project, data from an activity monitoring device is used to provide insight into the typical movements of its user. Data is taken at 5 minute intervals through the day for the months of October 2012 and November 2012. In this analysis, we aim to determine what an average day looks like, and whether this varies during the week.
+
+
 
 <a name="Summary"/>
-## Summary of Problem
+## Summary of Data
+
+The data for this project may be downloaded from [this page](https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip). The dataset is a CSV-formatted file with a total of 17,568 observations in the dataset. The variables listed in this dataset are:
+
+- **steps**: Number of steps taking in a 5-minute interval (missing values are `NA`)
+- **date**: The date on which each measurement was taken (in YYYY-MM-DD format)
+- **interval**: The identifier for each 5-minute interval during which the measurements were taken
+
+
+
+
+
+
+<a name="RepoStuff"/>
+## Repository Contents
+
+- **doc** folder: Original .pdf of Coursera assignment
+- **figure** folder: Figures produced by the analysis code, containing the following figures produced by the analysis described herein:
+    - **Plot 1 - Histogram.png**
+    - **Plot 2 - Mean Steps.png**
+    - **Plot 3 - Histogram 2.png**
+    - **Plot 4 - Mean Steps: Weekday vs. Weekend.png**
+- **instructions_fig** folder: Figure produced by/for assignment instructions
+- **Assignment_Description.md**: Markdown ReadMe version of Coursera assignment
+- **PA1_template.md**: Markdown file template for analysis, including segments of code used for analysis
+- **PA1_template.html**: HTML version of the markdown file
+- **ReadMe.Rmd**: The ReadMe introduction and explanation of the code (included within the .Rmd file)
+- **activity.csv**: The data file used for the analysis, also available [here](https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip).
+- **activity.zip**: The zipped version of the .csv file
+
 
 
 
 <a name="Code"/>
-## Summary of Code
+## Summary of Code and Analysis
 
 #### Loading and preprocessing the data
 
@@ -134,11 +180,21 @@ It looks as though, on average, weekend days involve more steps through the midd
 <br /><br />
 
 
+
+<a name="Conclusions"/>
+## Conclusions
+
+To summarize, we examine the data from an activity monitoring device to help understand daily/weekly patterns of its user. Some data is missing and is imputed from the data available. It appears that weekday mornings are quite active for a burst of time. Then, activity is quiet for the majority of the remainder of the day (presumably because the user is at work), though with some additional activity later in the day. Weekend mornings tend to average fewer steps than weekday morning peaks, but the weekends tend to have more activity overall spread throughout the day.
+
+
+
+
+<a name="Other"/>
 ## Additional Information
 
 Author: RWK
 
-License: None, free to use and edit as people wish (*if* they wish).
+License: None, free to use and edit as people wish.
 
 Contact: May be made through GitHub
 
