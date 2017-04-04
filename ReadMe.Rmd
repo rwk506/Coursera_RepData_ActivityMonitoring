@@ -11,7 +11,7 @@
 
 
 <a name="Intro"/>
-## Introduction
+<h3>Introduction</h3>
 
 Technology has now made it possible to closely monitor an individual's health. Certain products such as [Fitbit](http://www.fitbit.com), [Nike
 Fuelband](http://www.nike.com/us/en_us/c/nikeplus-fuelband), and [Jawbone Up](https://jawbone.com/up) allow tracking of one's physical movement throughout the day. However, the raw data can be difficult to obtain and sometimes more difficult to understand, as there is a minimal amount of statistical analysis available as well as a lack of software for handling the data.
@@ -21,7 +21,7 @@ In this project, data from an activity monitoring device is used to provide insi
 
 
 <a name="Summary"/>
-## Summary of Data
+<h3>Summary of Data</h3>
 
 The data for this project may be downloaded from [this page](https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip). The dataset is a CSV-formatted file with a total of 17,568 observations in the dataset. The variables listed in this dataset are:
 
@@ -35,7 +35,7 @@ The data for this project may be downloaded from [this page](https://d396qusza40
 
 
 <a name="RepoStuff"/>
-## Repository Contents
+<h3>Repository Contents</h3>
 
 - **doc** folder: Original .pdf of Coursera assignment
 - **figure** folder: Figures produced by the analysis code, containing the following figures produced by the analysis described herein:
@@ -55,7 +55,7 @@ The data for this project may be downloaded from [this page](https://d396qusza40
 
 
 <a name="Code"/>
-## Summary of Code and Analysis
+<h3>Summary of Code and Analysis</h3>
 
 #### Loading and preprocessing the data
 
@@ -187,7 +187,7 @@ The resulting plot can be viewed [here](https://github.com/rwk506/Coursera_RepDa
 
 
 <a name="Conclusions"/>
-## Conclusions
+<h3>Conclusions</h3>
 
 To summarize, we examine the data from an activity monitoring device to help understand daily/weekly patterns of its user. Some data is missing and is imputed from the data available. It appears that weekday mornings are quite active for a burst of time. Then, activity is quiet for the majority of the remainder of the day (presumably because the user is at work), though with some additional activity later in the day. Weekend mornings tend to average fewer steps than weekday morning peaks, but the weekends tend to have more activity overall spread throughout the day.
 
@@ -195,7 +195,7 @@ To summarize, we examine the data from an activity monitoring device to help und
 
 
 <a name="Other"/>
-## Additional Information
+<h3>Additional Information</h3>
 
 Author: RWK
 
